@@ -6,7 +6,7 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
 })
 function makeEnemy () {
     evilBurger = sprites.create(images2._pickRandom(), SpriteKind.Enemy)
-    evilBurger.setVelocity(40, 60)
+    evilBurger.setVelocity(randint(0, 100), randint(0, 100))
     evilBurger.setPosition(randint(0, 160), 0)
     evilBurger.setBounceOnWall(true)
     info.changeScoreBy(1)
